@@ -278,6 +278,7 @@ address {
   .mobile {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-content: space-evenly;
   }
