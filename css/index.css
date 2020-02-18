@@ -361,6 +361,25 @@ ul {
     body {
         background: yellowgreen;
     }
+
+    img {
+        display: none;
+    }
+
+    .CTASection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    .CTA {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+    }
 }
 
 /*mobile*/
@@ -372,6 +391,15 @@ ul {
     img {
         display: none;
     }
+
+    .CTA {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+    }
+
 }
 
 /*max width for scaling down = desktop first / min width for scaling up = mobile first */
