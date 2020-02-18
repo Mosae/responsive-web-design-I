@@ -229,8 +229,9 @@ header img {
 }
 
 .content {
-  display: inline-block;
-  position: relative;
+  /* display: flex; */
+  /* display: inline-block;
+  position: relative; */
 }
 
 .contentCard1,
@@ -285,26 +286,83 @@ address {
     position: static;
     margin-top: 60px;
   }
-  .content {
+  .CTASection button {
+    width: 13%;
+    padding: 1% 0px;
+    color: grey;
+    background-color: white;
+    position: absolute;
+    left: 45%;
+  }
+  /* .content {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+  } */
+  .content {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contentCard1 {
+    width: 100%;
+  }
+  .contentCard2 {
+    width: 100%;
+  } 
+  .contentCard2 {
+    width: 100%;
+  }
+  .contentCard3 {
+    width: 100%;
+  }
+  .contentCard4 {
+    width: 100%;
+  }
+  .contentCard5 {
+    width: 100%;
   }
 
-  .nav {
+  /* .firstsection {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-evenly;
-    background: white;
+    flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* width: 100%;
+    background: green;
+  } */
+  /* /* .contentCard1 {
+    width: 100%;
+  }
+  .contentCard2 {
+    width: 100%;
+  } 
+  .contentCard2 {
+    width: 100%;
+  }
+  .contentCard3 {
+    width: 100%;
+  }
+  .contentCard4 {
+    width: 100%;
+  }
+  .contentCard5 {
+    width: 100%;
   }
 
   .mobile {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-content: space-evenly;
+    align-content: space-evenly; */
     background: white;
+  }
+  #logo {
+    width: 200px;
+    height: 100%;
   }
 }
 
@@ -318,6 +376,40 @@ address {
     text-align: center;
     position: static;
   }
+
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* width: 100%; */
+  /* background: green;
+  } 
+
+  /* .contentCard1 {
+    width: 50%;
+  }
+  .contentCard2 {
+    width: 50%;
+  } */
+  /* 
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contentCard1 {
+    width: 40%;
+  }
+  .contentCard2 {
+    width: 40%;
+  }
+  .contentCard3 {
+    width: 100%;
+  }
+  .contentCard4 {
+    width: 100%;
+  }
+  .contentCard5 {
+    width: 100%;
+  } */
 }
 
 /*max width for scaling down = desktop first / min width for scaling up = mobile first */
