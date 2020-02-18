@@ -179,6 +179,10 @@ header {
     background-color: white;
 }
 
+.mobilenav {
+    display: none;
+}
+
 /* global header */
 header nav {
     display: flex;
@@ -363,6 +367,21 @@ ul {
         background: yellowgreen;
     }
 
+    header {
+        align-items: center;
+        flex-direction: column-reverse;
+        background: orangered;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 75%;
+    }
+
+
     .roundimg {
         display: none;
     }
@@ -388,6 +407,7 @@ ul {
 
 
     }
+
 }
 
 /*mobile*/
@@ -395,6 +415,8 @@ ul {
     body {
         background: orange;
     }
+
+
 
     .roundimg {
         display: none;
