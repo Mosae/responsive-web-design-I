@@ -281,6 +281,14 @@ address {
     flex-direction: column;
     justify-content: center;
     align-content: space-evenly;
+    background: white;
+  }
+  header img {
+    display: none;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly; */
   }
 }
 
@@ -288,12 +296,6 @@ address {
 @media (max-width: 800px) {
   .Desktop {
     display: none;
-  }
-  .mobile {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-evenly;
   }
 }
 
