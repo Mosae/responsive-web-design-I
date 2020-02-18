@@ -202,39 +202,15 @@ header a:hover {
     color: black;
 }
 
-/* header img {
-	display: flex;
-	justify-content: flex-end;
-	top: 10%;
-	left: 76%;
-} */
 
 .CTASection {
     display: flex;
     justify-content: space-between;
-    /* justify-content: space-around;
-	align-items: center; */
-    /* padding: 4% 3%;
-	margin: 6% 0px;
-	position: relative;
-	width: 100%;
-	margin-bottom: 10%; */
 }
 
-/* .CTASection img { */
-
-/* position: absolute; */
-/* bottom: -6%;
-	left: 55%; */
-/* }  */
 
 .CTA {
-    font-size: 80px;
-
-    /* display: flex; */
-    /* 
-	justify-content: flex-start;
-	flex-direction: column-reverse; */
+    font-size: 50px;
 }
 
 .CTASection button {
@@ -260,7 +236,7 @@ h1 {
 
 .bottombox {
     display: flex;
-    margin: 10px 10px;
+    justify-content: space-around;
 }
 
 .middle-img {
@@ -379,3 +355,23 @@ ul {
 #contact {
     margin-bottom: 1.5em;
 }
+
+/* tablet*/
+@media only screen and (max-width: 1024px) {
+    body {
+        background: yellowgreen;
+    }
+}
+
+/*mobile*/
+@media only screen and (max-width: 600px) {
+    body {
+        background: orange;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+/*max width for scaling down = desktop first / min width for scaling up = mobile first */
