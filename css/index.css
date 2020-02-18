@@ -179,6 +179,10 @@ header {
     background-color: white;
 }
 
+.navhr {
+    display: none;
+}
+
 .mobilenav {
     display: none;
 }
@@ -369,14 +373,17 @@ ul {
 
     header {
         margin-top: 10%;
-
         flex-direction: column-reverse;
-        background: orangered;
+
     }
 
     header nav {
         align-items: center;
         justify-content: space-between;
+    }
+
+    .navhr {
+        display: none;
     }
 
 
@@ -415,31 +422,30 @@ ul {
     }
 
     header {
-        margin-top: 10%;
+        margin-top: 50%;
         flex-direction: column-reverse;
-        background: orangered;
         justify-content: center;
-        align-items: center;
     }
 
+    header nav {
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
     nav {
-
-
-        margin-top: 70%;
         display: flex;
         flex-direction: column;
         background-color: palegoldenrod;
     }
 
     .navhr {
-        border: 1px solid black;
+        display: block;
+        border: 1px solid gray;
         width: 100%;
 
     }
-
-
-
-
 
     .roundimg {
         display: none;
