@@ -414,6 +414,23 @@ ul {
         background: orange;
     }
 
+    header {
+        margin-top: 10%;
+        flex-direction: column-reverse;
+        background: orangered;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 70%;
+        display: flex;
+        flex-direction: column;
+        background-color: palegoldenrod;
+    }
+
+
+
 
 
     .roundimg {
