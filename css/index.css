@@ -167,6 +167,7 @@ header {
   z-index: 1;
 }
 header nav {
+  display: flex;
   width: 75%;
   text-align: center;
   align-items: center;
@@ -272,9 +273,31 @@ address {
 
 /* mobile*/
 @media (max-width: 500px) {
-  .Desktop {
+  nav.Desktop {
     display: none;
   }
+  .headerimg {
+    display: none;
+  }
+  .CTA {
+    font-size: 80px;
+    text-align: center;
+    position: static;
+    margin-top: 60px;
+  }
+  .content {
+    display: flex;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-evenly;
+    background: white;
+  }
+
   .mobile {
     display: flex;
     flex-wrap: wrap;
@@ -283,19 +306,17 @@ address {
     align-content: space-evenly;
     background: white;
   }
-  header img {
-    display: none;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-evenly; */
-  }
 }
 
 /*tablet*/
 @media (max-width: 800px) {
-  .Desktop {
+  .headerimg {
     display: none;
+  }
+  .CTA {
+    font-size: 80px;
+    text-align: center;
+    position: static;
   }
 }
 
