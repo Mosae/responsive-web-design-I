@@ -362,7 +362,7 @@ ul {
         background: yellowgreen;
     }
 
-    img {
+    .roundimg {
         display: none;
     }
 
@@ -388,7 +388,7 @@ ul {
         background: orange;
     }
 
-    img {
+    .roundimg {
         display: none;
     }
 
