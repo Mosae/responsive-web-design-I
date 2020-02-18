@@ -423,10 +423,18 @@ ul {
     }
 
     nav {
+
+
         margin-top: 70%;
         display: flex;
         flex-direction: column;
         background-color: palegoldenrod;
+    }
+
+    .navhr {
+        border: 1px solid black;
+        width: 100%;
+
     }
 
 
@@ -439,6 +447,7 @@ ul {
 
     .CTA {
         display: flex;
+        margin-top: 70%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
