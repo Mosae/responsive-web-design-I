@@ -192,7 +192,7 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 75%;
+    width: 100%;
 }
 
 hr {
@@ -367,9 +367,7 @@ ul {
 
 /* tablet*/
 @media only screen and (max-width: 1024px) {
-    body {
-        background: yellowgreen;
-    }
+
 
     header {
         margin-top: 10%;
@@ -417,9 +415,7 @@ ul {
 
 /*mobile*/
 @media only screen and (max-width: 600px) {
-    body {
-        background: orange;
-    }
+
 
     header {
         margin-top: 50%;
@@ -430,14 +426,13 @@ ul {
     header nav {
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: 60%;
     }
 
 
     nav {
         display: flex;
         flex-direction: column;
-        background-color: palegoldenrod;
     }
 
     .navhr {
@@ -453,7 +448,7 @@ ul {
 
     .CTA {
         display: flex;
-        margin-top: 70%;
+        margin-top: 35%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
