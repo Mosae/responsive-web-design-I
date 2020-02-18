@@ -1,3 +1,4 @@
+line-height: 2;
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -84,13 +85,14 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -103,40 +105,46 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
+
 body {
-  line-height: 1;
+    line-height: 1;
 }
+
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
+
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+    content: "";
+    content: none;
 }
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+/* Global selectors */
 html,
 body {
-  height: 100%;
-  font-family: "Titillium Web", sans-serif;
+    height: 100%;
+    font-family: "Titillium Web", sans-serif;
 }
 
 h1,
@@ -144,272 +152,230 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Bangers", cursive;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
+    font-family: "Bangers", cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 /* Your code starts here! */
 * {
-  border: 2px solid grey;
+    /* border: 2px solid grey; */
 }
+
+/* Global selectors */
 body {
-  margin: 0% 15%;
-  background-color: white;
+    /* display: flex;
+	flex-wrap: wrap; */
+    margin: 0% 15%;
+    background-color: white;
 }
+
 header {
-  position: fixed;
-  display: block;
-  width: 70%;
-  height: 8%;
-  background-color: white;
-  top: 0;
-  z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 70%; */
+    height: 8%;
+    background-color: white;
 }
+
+/* global header */
 header nav {
-  display: flex;
-  width: 75%;
-  text-align: center;
-  align-items: center;
-  position: relative;
-  top: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
 }
+
 hr {
-  border: 1px solid black;
+    border: 1px solid black;
 }
+
 header a {
-  width: 20%;
-  margin: 5% 4%;
-  color: grey;
-  text-decoration: none;
+    width: 20%;
+    margin: 5% 4%;
+    color: grey;
+    text-decoration: none;
 }
+
 header a:hover {
-  color: black;
+    color: black;
 }
-header img {
-  position: absolute;
-  top: 10%;
-  left: 76%;
-}
-.mobile {
-  display: none;
-}
+
+/* header img {
+	display: flex;
+	justify-content: flex-end;
+	top: 10%;
+	left: 76%;
+} */
 
 .CTASection {
-  padding: 4% 3%;
-  margin: 6% 0px;
-  position: relative;
-  width: 100%;
-  margin-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-around;
+	align-items: center; */
+    /* padding: 4% 3%;
+	margin: 6% 0px;
+	position: relative;
+	width: 100%;
+	margin-bottom: 10%; */
 }
-.CTASection img {
-  position: absolute;
-  bottom: -6%;
-  left: 55%;
-}
+
+/* .CTASection img { */
+
+/* position: absolute; */
+/* bottom: -6%;
+	left: 55%; */
+/* }  */
+
 .CTA {
-  font-size: 80px;
-  text-align: center;
-  position: relative;
-  right: 23%;
-  margin-top: 60px;
-}
-.CTASection button {
-  width: 13%;
-  padding: 1% 0px;
-  color: grey;
-  background-color: white;
-  position: absolute;
-  left: 45%;
-}
-
-.CTASection button:hover {
-  color: white;
-  background-color: grey;
-}
-
-.content {
-  /* display: flex; */
-  /* display: inline-block;
-  position: relative; */
-}
-
-.contentCard1,
-.contentCard2 {
-  width: 48%;
-  display: inline-block;
-  margin: 4% 7px;
-}
-
-.contentCard3,
-.contentCard4,
-.contentCard5 {
-  width: 32%;
-  display: inline-block;
-  margin: 4% 4px;
-}
-
-.middle-img {
-  width: 100%;
-}
-
-footer {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  margin: 3% 0;
-  line-height: 2;
-}
-address {
-  margin-top: -16px;
-}
-.copyright {
-  margin-top: 3%;
-  text-align: center;
-}
-
-.contact {
-  line-height: 2;
-}
-
-/* mobile*/
-@media (max-width: 500px) {
-  nav.Desktop {
-    display: none;
-  }
-  .headerimg {
-    display: none;
-  }
-  .CTA {
     font-size: 80px;
-    text-align: center;
-    position: static;
-    margin-top: 60px;
-  }
-  .CTASection button {
-    width: 13%;
+
+    /* display: flex; */
+    /* 
+	justify-content: flex-start;
+	flex-direction: column-reverse; */
+}
+
+.CTASection button {
+    width: 125px;
     padding: 1% 0px;
     color: grey;
     background-color: white;
-    position: absolute;
-    left: 45%;
-  }
-  /* .content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  } */
-  .content {
-    width: 100%;
-    flex-direction: column;
-  }
-  .contentCard1 {
-    width: 100%;
-  }
-  .contentCard2 {
-    width: 100%;
-  } 
-  .contentCard2 {
-    width: 100%;
-  }
-  .contentCard3 {
-    width: 100%;
-  }
-  .contentCard4 {
-    width: 100%;
-  }
-  .contentCard5 {
-    width: 100%;
-  }
-
-  /* .firstsection {
-    display: flex;
-    flex-direction: column; */
-  /* flex-wrap: wrap; */
-  /* width: 100%;
-    background: green;
-  } */
-  /* /* .contentCard1 {
-    width: 100%;
-  }
-  .contentCard2 {
-    width: 100%;
-  } 
-  .contentCard2 {
-    width: 100%;
-  }
-  .contentCard3 {
-    width: 100%;
-  }
-  .contentCard4 {
-    width: 100%;
-  }
-  .contentCard5 {
-    width: 100%;
-  }
-
-  .mobile {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-evenly; */
-    background: white;
-  }
-  #logo {
-    width: 200px;
-    height: 100%;
-  }
 }
 
-/*tablet*/
-@media (max-width: 800px) {
-  .headerimg {
-    display: none;
-  }
-  .CTA {
-    font-size: 80px;
+h1 {
     text-align: center;
-    position: static;
-  }
-
-  /* flex-direction: column; */
-  /* flex-wrap: wrap; */
-  /* width: 100%; */
-  /* background: green;
-  } 
-
-  /* .contentCard1 {
-    width: 50%;
-  }
-  .contentCard2 {
-    width: 50%;
-  } */
-  /* 
-  .content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .contentCard1 {
-    width: 40%;
-  }
-  .contentCard2 {
-    width: 40%;
-  }
-  .contentCard3 {
-    width: 100%;
-  }
-  .contentCard4 {
-    width: 100%;
-  }
-  .contentCard5 {
-    width: 100%;
-  } */
 }
 
-/*max width for scaling down = desktop first / min width for scaling up = mobile first */
+.CTASection button:hover {
+    color: white;
+    background-color: grey;
+}
+
+.topBox {
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.bottombox {
+    display: flex;
+    margin: 10px 10px;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
+address {
+    margin-top: -16px;
+}
+
+.copyright {
+    /* margin-top: 3%; */
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    /* align-items: space-between; */
+    /* line-height: 2; */
+}
+
+h2 {
+    margin-top: 15px;
+}
+
+/* end of home page */
+/* start of services page */
+
+.header {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* section that contains all boxes */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-around;
+    /* padding: 25px 50px 75px; */
+}
+
+/* end of boxes container */
+/* refers to each box. they all have the same styling */
+.service-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: space-between;
+    justify-content: space-between;
+    background: lightgrey;
+    border: 1px solid black;
+    width: 45%;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.service-item p {
+    line-height: 20px;
+}
+
+button {
+    padding: 5px;
+    margin: 10px;
+    width: 120px;
+}
+
+.facts {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.factsP {
+    display: flex;
+    width: 45%;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin-top: 20px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+    list-style-type: square;
+}
+
+.somefacts {
+    display: flex;
+    float: left;
+}
+
+.bottomfacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.copyright {
+    line-height: 15em;
+}
+
+.serviceimg {
+    display: flex;
+    margin-top: 2em;
+}
+
+#contact {
+    margin-bottom: 1.5em;
+}
